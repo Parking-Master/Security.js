@@ -53,7 +53,7 @@ Depending on your browser, it will output a message due to any issues such as:
   
   It will download *1* File.
   
-  You can download it by the [download page](download.html)
+  You can download it by the [download page](https://parking-master.github.io/Security.js/download.html)
   
   ### 2. Get by `<script>` tag
   You can easily get the JavaScript source code by embedding it:
