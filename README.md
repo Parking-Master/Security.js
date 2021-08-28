@@ -3,3 +3,8 @@ SecurityJS Is a JavaScript shield protecter from various attacks, such as instal
 
 ### Watch how I type in "javascript" In the url:
 ![Fail screenshot](securityJS_screenshot_png.png)
+
+#### Nothing happens? This is a big security issue.
+
+### With SecurityJS:
+
