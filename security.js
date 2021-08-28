@@ -15,7 +15,40 @@ function seterror_rq(){ window.stop();var overlay_xtwsOi = document.createElemen
             console.clear(console.error, console.warn);
         }
 })();
-var security = {
+var debug_wrapper = document.createElement('div');
+debug_wrapper.id = 'log';
+debug_wrapper.hidden = 'true';
+document.body.appendChild(debug_wrapper);
+var old = console.log; 
+(function() { if (!console) { console = {}; }
+var logger = document.getElementById('log'); console.log = function(message) { 
+if (typeof message == 'object') { logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(message) : String(message)) + '';
+}else { var debug_wrapper = document.getElementById('log'); debug_wrapper.innerHTML += message; }}})();
+var securityjs = {
+block: function(type, what, str) {
+        if (type.includes('url')) {
+            window.history.replaceState({}, document.title, what + str);
+        } else if (type.includes('source')) {
+            document.body.innerHTML = document.innerHTML.replace('<'+ what, '<!--<' + what) || document.innerHTML.replace('/' + what + '>', '/' + what + '>-->');
+        } else if (type.includes('console')) {
+            setInterval(function(){
+                var console = document.getElementById('log').innerHTML;
+                if (console.includes(what) || console.includes(str)) {
+                    window.stop();
+                    document.head.innerHTML = document.head.innerHTML.replace(what, '') || document.head.innerHTML.replace(str, '');
+                    document.body.innerHTML = document.body.innerHTML.replace(what, '') || document.body.innerHTML.replace(str, '');
+                    document.documentElement.innerHTML = document.documentElement.innerHTML.replace(what, '') || document.documentElement.innerHTML.replace(str, '');
+                }
+            },1);
+        }
+},
+trustAll: function(val){
+if (val.includes('true')) {
+    document.querySelector('script').setAttribute('trust', 'true');
+} else {
+    document.querySelector('script').setAttribute('trust', 'false');
+}
+},
 trust: function(trust, tag) {
     if (trust.includes('trust: true')) {
         document.getElementsByTagName('script')[tag].setAttribute('trust', 'true');
