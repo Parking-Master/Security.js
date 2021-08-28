@@ -8,3 +8,4 @@ SecurityJS Is a JavaScript shield protecter from various attacks, such as instal
 
 ### With SecurityJS:
 
+![Success screenshot](securityJS_screenshot_s_png.png)
