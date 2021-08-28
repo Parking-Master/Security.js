@@ -58,7 +58,7 @@ Depending on your browser, it will output a message due to any issues such as:
   ### 2. Get by `<script>` tag
   You can easily get the JavaScript source code by embedding it:
   ```
-  <script type='text/javascript' src='https://raw.githubusercontent.com/Parking-Master/Security.js/main/security.js'></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/Parking-Master/Security.js/security.js'></script>
   ```
   **IMPORTANT NOTE:** Please embed the `<script>` tag inside the head, or else it won't block anything!
   
