@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
+            <a href='security.js' id='download' hidden download='SecurityJS.js'>Download</a>
 <script>
 (function(){
-var element = document.createElement('a');
-            element.setAttribute('href', 'Security.js');
-            element.setAttribute('download', 'SecurityJS.js');
-            document.body.appendChild(element);
-            element.click();
+document.getElementById('download').click();
 })();
 </script>
 </body>
