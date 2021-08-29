@@ -1,5 +1,5 @@
-# Security.js
-SecurityJS Is a JavaScript shield protecter from various attacks, such as installing Malware and/or Hackers. It is free, safe, and fully customizable.
+# SecurityJS
+SecurityJS is a JavaScript shield protecter from various attacks, such as installing Malware and/or Hackers. It is free, safe, and fully customizable.
 
 ### Watch how I type in "javascript" In the url:
 ![Fail screenshot](securityJS_screenshot_png.png)
@@ -60,12 +60,62 @@ Depending on your browser, it will output a message due to any issues such as:
   ```
   <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/Parking-Master/Security.js/security.js'></script>
   ```
-  **IMPORTANT NOTE:** Please embed the `<script>` tag inside the head, or else it won't block anything!
+  **NOTE:** Please embed the `<script>` tag right at the end of the body tag, or else it won't block anything!
   
-  Now, go ahead and try to type in the address bar: <kbd>https://mydomain.com?javascript=alert()</kbd>
+  Now, go ahead and try to type in the address bar: <kbd>https://[domain]?javascript=alert()</kbd>
+  **NOTE:** Replace "[domain]" with your domain or site address.
   
   What happenend? It outputted a message! You can also open up the dev-console, and go to the logs. You'll see a warning by SecurityJS saying it blocked a possible attack.
   
-  Go ahead and try to put a `<script>` tag with `src` attribute of any http javascript file.
+  Go ahead and try it out.
   
-  ### Thanks for reading! Please consider getting SecurityJS for your site.
+  Now, let's get into more advanced properties.
+  
+  ### SecurityJS functions
+  
+  every SecurityJS Function starts with `securityjs`.
+  ```
+  securityjs.function('property', 'value', 'tag');
+  ```
+  #### How to block resources
+  ###### JavaScript
+  ```
+    securityjs.block(type, what, string);
+  ```
+  ###### Detailed example:
+  ```
+    securityjs.block('url', 'javascript', 'not_allowed');
+  ```
+  ##### Output:
+  1. <kbd>https://example.com?javascript</kbd>
+  2. <kbd>https://example.com?not_allowed</kbd>
+  
+  #### Blocking console commands
+  ###### JavaScript
+  ```
+  securityjs.block('console', '<script>');
+  ```
+  **Notice:** You only need 2 parameters for the console. You can use `what` or `str` for the last one.
+  ##### Output:
+  ```
+  >> var script = document.createElement('script'); script.src = 'http://example.js'; document.body.appendChild(script);
+  ```
+  ```
+  SecurityJS: blocked loading resource from 'http://example.js'.
+  ```
+  #### Please read the [documentation](doc.html) to see more `block` functions.
+  
+  ### Custom blockers
+  ###### JavaScript
+  ```
+    function onexecute(){
+    // do what you want to do
+    alert('You are not welcomed!');
+    }
+  ```
+  ##### Output:
+  <kbd>http://example.com?javascript</kbd>
+  > <br>
+  >  You are not welcomed!<br>
+  >  <ul><ul><kbd>OK</kbd>
+  You can make any functions you want with `onexecute()`.
