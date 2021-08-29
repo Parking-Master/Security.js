@@ -1,5 +1,7 @@
 # SecurityJS
-SecurityJS is a JavaScript shield protecter from various attacks, such as installing Malware and/or Hackers. It is free, safe, and fully customizable.
+#### Table of contents:
+##### [Trusting certain and/or all loading sources](#
+SecurityJS is a JavaScript shield protecter from various attacks on your site. It is free, safe, and fully customizable.
 
 ### Watch how I type in "javascript" In the url:
 ![Fail screenshot](securityJS_screenshot_png.png)
@@ -12,6 +14,7 @@ _But not just that. ― See more below_
 
 It also stops loading sources from the **Developer console command line**, URL/URI Params, and unknown `<script>` tag sources such as `HTTP`.
 
+### Trusting certain and/or all loading sources
 *tip-*
 If you trust a source from a certain script tag, you can either add the `trust` attribute (html), or add it in JavaScript:
 
