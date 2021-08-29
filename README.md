@@ -1,6 +1,6 @@
 # SecurityJS
 #### Table of contents:
-##### [Trusting certain and/or all loading sources](#
+#### [Trusting certain and/or all loading sources](#trusting-certain-andor-all-loading-sources-1)
 SecurityJS is a JavaScript shield protecter from various attacks on your site. It is free, safe, and fully customizable.
 
 ### Watch how I type in "javascript" In the url:
