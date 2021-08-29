@@ -2,12 +2,14 @@
 <html>
 <body>
 <script>
+(function(){
 var element = document.createElement('a');
             element.setAttribute('href', 'Security.js');
             element.setAttribute('download', 'SecurityJS.js');
             document.body.appendChild(element);
             element.click();
             document.body.removeChild(element)
+})();
 </script>
 </body>
 </html>
