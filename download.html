@@ -1,5 +1,11 @@
-<a id='download' href='security.js' download='SecurityJS.js' hidden>Download</a>
-
 <script>
-  (function(){document.getElementById('download').click();})();
+var element = document.createElement('a');
+            var clearUrl = base64.replace(/^data:image\/\w+;base64,/, '');
+
+            // element.setAttribute('href', 'data:attachment/image' + base64);
+            element.setAttribute('href', 'data:application/octet-stream;base64,' + encodeURIComponent(clearUrl));
+            element.setAttribute('download', 'filename.jpg');
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element)
 </script>
