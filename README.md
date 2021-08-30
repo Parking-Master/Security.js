@@ -3,7 +3,8 @@
 #### [Trusting certain and/or all loading sources](#trusting-certain-andor-all-loading-sources-1)
 #### [Installing it with file/script tag](#without-further-ado-lets-install-it)
 #### [SecurityJS Functions](#securityjs-functions)
-#### [Using the same teqnique with `link` tags]()
+#### [Using the same teqnique with `link` tags](#using-the-same-teqnique-with-link-tags-1)
+<hr>
 SecurityJS is a JavaScript shield protecter from various attacks on your site. It is free, safe, and fully customizable.
 
 ### Watch how I type in "javascript" In the url:
