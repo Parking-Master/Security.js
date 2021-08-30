@@ -1,4 +1,7 @@
 # SecurityJS
+<div class="aside">
+  <button>Butt</button>
+</div>
 ### Table of contents:
 #### [Trusting certain and/or all loading sources](#trusting-certain-andor-all-loading-sources-1)
 #### [Installing it with file/script tag](#without-further-ado-lets-install-it)
