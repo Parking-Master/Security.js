@@ -1,6 +1,9 @@
 # SecurityJS
-#### Table of contents:
+### Table of contents:
 #### [Trusting certain and/or all loading sources](#trusting-certain-andor-all-loading-sources-1)
+#### [Installing it with file/script tag](#without-further-ado-lets-install-it)
+#### [SecurityJS Functions](#securityjs-functions)
+#### [Using the same teqnique with `link` tags]()
 SecurityJS is a JavaScript shield protecter from various attacks on your site. It is free, safe, and fully customizable.
 
 ### Watch how I type in "javascript" In the url:
@@ -122,3 +125,25 @@ Depending on your browser, it will output a message due to any issues such as:
   >  You are not welcomed!<br>
   >  <ul><ul><kbd>OK</kbd>
   You can make any functions you want with `onexecute()`.
+  
+  ### Using the same teqnique with `link` tags
+  You've probably gone through this whole tutorial without<br>knowing how to do the same with `link` tags.
+  
+  **You can easily** Do so just by blocking link tags.
+###### SecurityJS (JavaScript)
+```
+  securityjs.block('source', 'link');
+```
+  OR  
+```
+  securityjs.block('source', 'link', 'http');
+```
+You can also use "**OR**" (||) or "**AND**" (&&):
+```
+  securityjs.block('source', 'link', 'http' || 'http://');
+```
+```
+  securityjs.block('source', 'link', 'http' && 'http://');
+```
+  _This also works with the `script` tags too._
+  
