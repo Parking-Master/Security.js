@@ -4,6 +4,7 @@
 #### [Installing it with file/script tag](#without-further-ado-lets-install-it)
 #### [SecurityJS Functions](#securityjs-functions)
 #### [Using the same teqnique with `link` tags](#using-the-same-teqnique-with-link-tags-1)
+#### [Blocking site from being embedded](#blocking-site-from-being-embedded-1)
 <hr>
 SecurityJS is a JavaScript shield protecter from various attacks on your site. It is free, safe, and fully customizable.
 
@@ -147,4 +148,17 @@ You can also use "**OR**" (||) or "**AND**" (&&):
   securityjs.block('source', 'link', 'http' && 'http://');
 ```
   _This also works with the `script` tags too._
+  
+ ### Blocking site from being embedded
+  You can block your site from being embedded using the `meta` tag:<br>
+  (Note: Use the `meta` tag only in between the `head` tag).
+  ###### HTML
+  ```
+    <meta name="X-Frame-Options" content="deny">
+  ```
+  To only allow it through your site directory, use "allow-same-origin":
+  ###### HTML
+  ```
+    <meta name="X-Frame-Options" content="allow-same-origin">
+  ```
   
