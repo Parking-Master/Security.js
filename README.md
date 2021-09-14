@@ -148,7 +148,14 @@ You can also use "**OR**" (||) or "**AND**" (&&):
   securityjs.block('source', 'link', 'http' && 'http://');
 ```
   _This also works with the `script` tags too._
-  
+ ### SecurityJS `Auth()` function
+  Authorize content to a specific IPv4 address
+  <br>
+  (it has to be public, or SecurityJS won't recognize it):
+  ##### Syntax:
+```
+  securityjs.auth(type, ip);
+```
  ### Blocking site from being embedded
   You can block your site from being embedded using the `meta` tag:<br>
   (Note: Use the `meta` tag only in between the `head` tag).
