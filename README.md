@@ -155,7 +155,26 @@ You can also use "**OR**" (||) or "**AND**" (&&):
   ##### Syntax:
 ```
   securityjs.auth(type, ip);
+``` 
+- Hold up. You're using your public IP address! That's an even bigger security issue.
+**How to hide the IP address:**
+  Create a `.htm` or `.html` file.<br>
+  Name it `SecurityJSAuth`.<br>
+  in the `head` section of the HTML file, add this:
 ```
+  <script src="https://cdn.jsdelivr.net/Parking-Master/Security.js@latest/auth/protect/main.js" async defer></script>
+```
+Then, temporarialy add this anywhere in the HTML document:
+```
+  <script type="text/javascript">
+    securityjsauth.setIP({
+      ip: '8.8.8.8'
+    });
+  </script>
+```
+set `ip` to your **public** IP.
+reload your HTML page and then remove the `securityjsauth.setIP`. Your IP will be set.
+
  ### Blocking site from being embedded
   You can block your site from being embedded using the `meta` tag:<br>
   (Note: Use the `meta` tag only in between the `head` tag).
