@@ -156,7 +156,7 @@ You can also use "**OR**" (||) or "**AND**" (&&):
 ```
   securityjs.auth(type, ip);
 ``` 
-- Hold up. You're using your public IP address! That's an even bigger security issue.
+- Hold up. You're using your public IP address! That's an even bigger security issue.<br><br>
 **How to hide the IP address:**
   Create a `.htm` or `.html` file.<br>
   Name it `SecurityJSAuth`.<br>
@@ -168,13 +168,16 @@ Then, temporarialy add this anywhere in the HTML document:
 ```
   <script type="text/javascript">
     securityjsauth.setIP({
+      user: 'admin',
+      pass: 'pass-Code134',
       ip: '8.8.8.8'
     });
   </script>
 ```
+`user` will be the username to access your file, and `pass` will be the password.<br>
 set `ip` to your **public** IP.
 reload your HTML page and then remove the `securityjsauth.setIP`. Your IP will be set.
-
+<br>
  ### Blocking site from being embedded
   You can block your site from being embedded using the `meta` tag:<br>
   (Note: Use the `meta` tag only in between the `head` tag).
