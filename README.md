@@ -181,7 +181,9 @@ Accessing your authorized file ends up like this:
   ```
   or...<br>
   ###### JavaScript
-  securityjs.block('frame', 'all');<br>
+  ```
+    securityjs.block('frame', 'all');<br>
+  ```
   ### Making secure, unreadable objects
   Build an object from securityjs that is unreadable, and secure.<br>
   For example, what if I made a signup form, that stores user data in an object. Do you want the user to edit it?<br>
@@ -191,5 +193,5 @@ Accessing your authorized file ends up like this:
   ```
   Once the object is made, it is fully secure and unreadable.<hr>
   
-  Did you like this project? Check out our other ones:<br>
+  #### Did you like this project? Check out our other ones:<br>
   <kbd>[Parking Master](https://github.com/Parking-Master/Parking-Master)</kbd> | <kbd>[No-Time](https://github.com/Parking-Master/No-Time)</kbd>
