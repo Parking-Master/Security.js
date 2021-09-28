@@ -61,11 +61,12 @@ Depending on your browser, it will output a message due to any issues such as:
   
   You can download it by the [download page](https://parking-master.github.io/Security.js/download.html)
   
-  ### 2. Get by <a href='https://cdn.jsdelivr.net'>CDN</a>:
+  ### 2. Get it by <a href='https://cdn.jsdelivr.net'>CDN</a>:
   You can easily get the JavaScript source code by embedding it:
   ```
-  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/Parking-Master/Security.js/security.js'></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/Parking-Master/Security.js@latest/security.js' aysnc defer></script>
   ```
+  **IMPORTANT:** HTML `async` attribute means it executes as soon as possible. HTML `defer` attribute means the page won't load until the file is loaded.<br>
   **NOTE:** Please put the `<script>` tag right at the closing body tag, or else it won't block anything!
   
   Now, go ahead and try to type in the address bar: <kbd>https://[domain]?javascript=alert()</kbd>
@@ -109,7 +110,7 @@ Depending on your browser, it will output a message due to any issues such as:
   >> var script = document.createElement('script'); script.src = 'http://example.js'; document.body.appendChild(script);
   ```
   ```
-  SecurityJS: blocked mixed content loading resource from 'http://example.js'.
+  Uncaught DOMException: SecurityJS: blocked mixed loading resource from 'http://example.js' REASON (mixed content security risk).
   ```
   #### Please read the [documentation](doc.html) to see more `block` functions.
   
@@ -160,7 +161,7 @@ You can also use "**OR**" (||) or "**AND**" (&&):
 ```
   securityjs.auth('ip', '8.8.8.8');
 ```
-  ###### Passcode (JavaScript)
+  ###### Passcode (JavaScript):
 ```
   securityjs.auth('passcode', '1secret-pass12!');
 ```
@@ -175,15 +176,26 @@ Accessing your authorized file ends up like this:
   ```
     <meta name="X-Frame-Options" content="deny">
   ```
-  To only allow it through your site domain, use "same-origin":
+  To only allow it through your site domain, use "allow-same-origin":
   ###### HTML
   ```
-    <meta name="X-Frame-Options" content="same-origin">
+    <meta name="X-Frame-Options" content="allow-same-origin">
   ```
   or...<br>
   ###### JavaScript
   ```
     securityjs.block('frame', 'all');<br>
+  ```
+  ### Key Generator with SecurityJS
+  How to generate a random key with javascript:
+  ```
+    var myKey = new securityjs.generateKey();
+    // Output: r1uu-y2ur8-EwIE4-haBVqDi9IgC1
+  ```
+  To make a certain length:
+  ```
+    var myKey = new securityjs.generateKey(10);
+    // Output: 6ygY87EwTp
   ```
   
   #### Did you like this project? Check out our other ones:<br>
