@@ -52,12 +52,12 @@ Depending on your browser, it will output a message due to any issues such as:
   If you encountered a problem, please contact the owner.<br>
                                        <kbd>Back</kbd>
 
-  #### Without further ado, let's install it:
+  #### To install it:
   
   ### 1. Download full file
   The only step for this is to install it by download. 
   
-  It will download *1* File.
+  It will download one File.
   
   You can download it by the [download page](https://parking-master.github.io/Security.js/download.html)
   
