@@ -59,7 +59,7 @@ Depending on your browser, it will output a message due to any issues such as:
   
   It will download one File.
   
-  You can download it by the [download page](https://parking-master.github.io/Security.js/download.html)
+  You can download it [here](https://parking-master.github.io/Security.js/download.html)
   
   ### 2. Get it by <a href='https://cdn.jsdelivr.net'>CDN</a>:
   You can easily get the JavaScript source code by embedding it:
