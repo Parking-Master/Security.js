@@ -56,15 +56,14 @@ Depending on your browser, it will output a message due to any issues such as:
   
   ### 1. Download full file
   The only step for this is to install it by download. 
-  
-  It will download one File.
-  
-  You can download it [here](https://parking-master.github.io/Security.js/download.html)
+    
+  You can download it [here](https://parking-master.github.io/Security.js/download.html?download=js)<br>
+  Or [get the minified version](https://parking-master.github.io/Security.js/download.html?download=min)
   
   ### 2. Get it by <a href='https://cdn.jsdelivr.net'>CDN</a>:
   You can easily get the JavaScript source code by embedding it:
   ```
-  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/Parking-Master/Security.js@latest/security.js' aysnc defer></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/Parking-Master/Security.js@latest/security.min.js' aysnc defer></script>
   ```
   **IMPORTANT:** HTML `async` attribute means it executes as soon as possible. HTML `defer` attribute means the page won't load until the file is loaded.<br>
   **NOTE:** Please put the `<script>` tag right at the closing body tag, or else it won't block anything!
