@@ -3,7 +3,16 @@
 <head><script src="https://cdn.jsdelivr.net/gh/rndme/download/download.min.js"></script></head>
 <body>
 <script>
-download('/Security.js/security.js');
+var uri = new URLSearchParams(location.search).get('download');
+if (uri) {
+  if (uri == 'min') {
+    download('/Security.js/security.min.js');
+  } else if (uri == 'js') {
+    download('/Security.js/security.min.js');
+  }
+} else {
+  throw new Error('You must provide a download type (min.js/.js)');
+}
 </script>
 </body>
 </html>
