@@ -183,7 +183,7 @@ Accessing your authorized file ends up like this:
   or...<br>
   ###### JavaScript
   ```
-    securityjs.block('frame', 'all');<br>
+    securityjs.block('frame', 'all');
   ```
   ### Key Generator with SecurityJS
   How to generate a random key with javascript:
