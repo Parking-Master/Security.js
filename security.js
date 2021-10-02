@@ -94,9 +94,25 @@ var securityjs = {
     object: function(e) {
         if ("object" == typeof object) return e || DOMError;
         console.error("Uncaught TypeError: SecurityJS: object is an object function.")
-    }
+    },
+    generateKey: function(length){
+if(length==null||length=='undefined'){length=16}
+var a='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'.split(""),b=[],i;  
+for(i=0;i<length;i++){
+var j=(Math.random()*(a.length-1)).toFixed(0);
+b[i]=a[j];
+}
+var e=b.join('');
+if(e.length>=256) {
+  throw new Error('SecurityJS: Cant\'t generate key over length of 255');
+} else {
+return e;
+}
 };
-
+if (location.protocol=='http:'){
+    if (securityjs!=undefined){securityjs=undefined}
+    throw new Error('SecurityJS: Security.js is only available for encrypted websites. Use only with HTTPS (see more at https://github.com/Parking-Master/Security.js/blob/main/README.md#user-content-note-securityjs-is-only-available-for-secure-sites-with-hypertext-transfer-protocol-secure-https)');
+}
 function change_hyperLink(e) {
     e.includes("down") ? (document.getElementById("SecurityJS-anchor_link_underline_msover_Ivr").style.textDecoration = "underline", document.getElementById("SecurityJS-anchor_link_underline_msover_Ivr").style.borderBottom = "none") : e.includes("up") && (document.getElementById("SecurityJS-anchor_link_underline_msover_Ivr").style.textDecoration = "none", document.getElementById("SecurityJS-anchor_link_underline_msover_Ivr").style.borderBottom = "1px solid #F8BB86")
 }
