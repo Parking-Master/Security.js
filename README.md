@@ -9,7 +9,7 @@
 <hr>
 SecurityJS is a JavaScript shield protecter from various attacks on your site. It is free, safe, and fully customizable.<br>
 
-**NOTE:** SecurityJS is only available for secure sites with _**H**yper**T**ext **T**ransfer **P**rotocol **S**ecure_ (HTTPS)<br>
+##### **NOTE:** SecurityJS is only available for secure sites with _**H**yper**T**ext **T**ransfer **P**rotocol **S**ecure_ (HTTPS)<br>
 
 ### Watch how I type in "javascript" In the url:
 ![Fail screenshot](securityJS_screenshot_png.png)
