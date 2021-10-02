@@ -188,12 +188,12 @@ Accessing your authorized file ends up like this:
   ### Key Generator with SecurityJS
   How to generate a random key with javascript:
   ```
-    var myKey = new securityjs.generateKey();
+    var myKey = securityjs.generateKey();
     // Output: r1uu-y2ur8-EwIE4-haBVqDi9IgC1
   ```
   To make a certain length:
   ```
-    var myKey = new securityjs.generateKey(10);
+    var myKey = securityjs.generateKey(10);
     // Output: 6ygY87EwTp
   ```
   
