@@ -140,7 +140,7 @@ Depending on your browser, it will output a message due to any issues such as:
 ```
   securityjs.block('source', 'link', 'http');
 ```
-You can also use "**OR**" (||) or "**AND**" (&&):
+You can also use "**OR**" (`||`) or "**AND**" (`&&`) operators:
 ```
   securityjs.block('source', 'link', 'http' || 'http://');
 ```
