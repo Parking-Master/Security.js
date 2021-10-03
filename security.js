@@ -108,7 +108,8 @@ if(e.length>=256) {
 } else {
 return e;
 }
-};
+}
+}
 if (location.protocol=='http:'){
     if (securityjs!=undefined){securityjs=undefined}
     throw new Error('SecurityJS: Security.js is only available for encrypted websites. Use only with HTTPS (see more at https://github.com/Parking-Master/Security.js/blob/main/README.md#user-content-note-securityjs-is-only-available-for-secure-sites-with-hypertext-transfer-protocol-secure-https)');
