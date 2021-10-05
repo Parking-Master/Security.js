@@ -1,13 +1,18 @@
 # SecurityJS
 ### Table of contents:
+
 #### [Trusting certain and/or all loading sources](#trusting-certain-andor-all-loading-sources-1)
-#### [Installing it with file/script tag](#without-further-ado-lets-install-it)
+#### [Installing it / Embedding it](#to-install-it)
 #### [SecurityJS Functions](#securityjs-functions)
 #### [Using the same teqnique with `link` tags](#using-the-same-teqnique-with-link-tags-1)
 #### [SecurityJS `Auth()` function](#securityjs-auth-function-1)
 #### [Blocking site from being embedded](#blocking-site-from-being-embedded-1)
+#### [SecurityJS 16-bit key generator](#key-generator-with-securityjs)
+
 <hr>
-SecurityJS is a JavaScript shield protecter from various attacks on your site. It is free, safe, and fully customizable.<br>
+SecurityJS is a JavaScript library for avoiding various attacks on your site. It also comes with free 8-bit security encryption<br>
+
+#### For more advanced security: [SecurityJS.128<sup>b</sup>](https://github.com/Parking-Master/SecurityJS.128)
 
 ##### **NOTE:** SecurityJS is only available for secure sites with _**H**yper**T**ext **T**ransfer **P**rotocol **S**ecure_ (HTTPS)<br>
 
@@ -96,7 +101,7 @@ Depending on your browser, it will output a message due to any issues such as:
     securityjs.block('url', 'javascript', 'not_allowed');
   ```
   ##### Output:
-  1. <kbd>https://example.com?javascript</kbd>
+  1. <kbd>https://example.com?javascript=void(0)</kbd>
   2. <kbd>https://example.com?not_allowed</kbd>
   
   #### Blocking console commands
@@ -105,7 +110,7 @@ Depending on your browser, it will output a message due to any issues such as:
   securityjs.block('console', 'load');
   ```
   This can block loading sources from the _JavaScript console_
-  **Notice:** You only need 2 parameters for the console. You can use `what` or `str` for the last one.
+  **Notice:** You only need 2 parameters for the console.
   ##### Output:
   ```
   >> var script = document.createElement('script'); script.src = 'http://example.js'; document.body.appendChild(script);
@@ -124,7 +129,7 @@ Depending on your browser, it will output a message due to any issues such as:
     };
   ```
   ##### Output:
-  <kbd>http://example.com?javascript=myFunction()</kbd>
+  <kbd>http://example.com?javascript=void(0)</kbd>
   > <br>
   >  You are not welcomed!<br>
   >  <ul><ul><kbd>OK</kbd>
