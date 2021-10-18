@@ -1,5 +1,6 @@
-# SecurityJS
-### Table of contents:
+# <strike>SecurityJS</strike>
+_Closed._ A new more powerful version has been released. [SecurityJS.128](https://github.com/Parking-Master/SecurityJS.128)
+<!-- ### Table of contents:
 
 #### [Trusting certain and/or all loading sources](#trusting-certain-andor-all-loading-sources-1)
 #### [Installing it / Embedding it](#to-install-it)
@@ -206,3 +207,4 @@ Accessing your authorized file ends up like this:
   
   #### Did you like this project? Check out our other ones:<br>
   <kbd>[Parking Master](https://github.com/Parking-Master/Parking-Master)</kbd> | <kbd>[No-Time](https://github.com/Parking-Master/No-Time)</kbd>
+ -->
