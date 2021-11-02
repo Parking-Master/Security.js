@@ -1,6 +1,8 @@
 # SecurityJS&ThickSpace;<sub>_(Closed)_</sub>
 SecurityJS is still in use, but is not monitored for security or bug fixes.<br>
-_Closed. A new more powerful version has been released. [SecurityJS.128](https://github.com/Parking-Master/SecurityJS.128)_
+_Closed. A new more powerful version has been released. [SecurityJS.128](https://github.com/Parking-Master/SecurityJS.128)_<br>
+_Disclaimer: everything will be deprecated because of security issues._
+
 <!-- ### Table of contents:
 
 #### [Trusting certain and/or all loading sources](#trusting-certain-andor-all-loading-sources-1)
